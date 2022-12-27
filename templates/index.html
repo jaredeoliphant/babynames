@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Baby Names</title>
+</head>
+<body>
+<form method="POST">
+    {{form.hidden_tag()}}
+    {{form.babyname.label}}{{form.babyname()}}
+    <br>
+    {{form.submit()}}
+</form>
+    
+{% if session['babyname'] %}
+    <p> you entered: {{ session['babyname'] }} </p>
+{% endif %}
+{% if imgdata %}
+    <p>  <img src="data:image/png;base64,{{ imgdata }}"/> </p>
+{% endif %}
+   
+
+</body>
+</html>
