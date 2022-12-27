@@ -1,11 +1,6 @@
-from flask import Flask, render_template, request, Response, session, redirect, flash, url_for
+from flask import Flask, render_template, session
 from flask_wtf import FlaskForm
-from wtforms import StringField, SubmitField#, FloatField, FileField, MultipleFileField, BooleanField
-#from wtforms.validators import Length, DataRequired, NumberRange
-# from wtforms.fields.html5 import DecimalRangeField
-#from wtforms.widgets.html5 import ColorInput#, IntegerRangeField
-# from flask.ext.wtf.html5 import ColorInput
-#from werkzeug.utils import secure_filename
+from wtforms import StringField, SubmitField
 import os
 import pandas as pd
 import numpy as np
