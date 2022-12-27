@@ -1,9 +1,9 @@
 Gunicorn
-numpy
-pandas
-scipy
-matplotlib
-wtforms.widgets
-wtforms
-flask
-flask_wtf
+Flask==1.1.2
+Flask_WTF==1.0.1
+matplotlib==3.3.4
+numpy==1.20.1
+pandas==1.2.4
+Werkzeug==1.0.1
+WTForms==2.2.1
+pyarrow
