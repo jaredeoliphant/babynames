@@ -1,11 +1,11 @@
 from flask import Flask, render_template, request, Response, session, redirect, flash, url_for
 from flask_wtf import FlaskForm
-from wtforms import StringField, SubmitField, FloatField, FileField, MultipleFileField, BooleanField
-from wtforms.validators import Length, DataRequired, NumberRange
+from wtforms import StringField, SubmitField#, FloatField, FileField, MultipleFileField, BooleanField
+#from wtforms.validators import Length, DataRequired, NumberRange
 # from wtforms.fields.html5 import DecimalRangeField
-from wtforms.widgets.html5 import ColorInput#, IntegerRangeField
+#from wtforms.widgets.html5 import ColorInput#, IntegerRangeField
 # from flask.ext.wtf.html5 import ColorInput
-from werkzeug.utils import secure_filename
+#from werkzeug.utils import secure_filename
 import os
 import pandas as pd
 import numpy as np
@@ -14,7 +14,7 @@ import matplotlib.pyplot as plt
 from io import BytesIO
 import base64
 
-#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
+
 app = Flask(__name__)
 
 app.config['SECRET_KEY'] = 'secretkey'
